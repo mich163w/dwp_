@@ -359,6 +359,18 @@ input[type=file]::file-selector-button {
     font-size: 16px;
 }
 
+.rules a{
+    text-decoration: none;
+    color: white;
+}
+
+.toLogin {
+    border-radius: 20px;
+    height: 45px;
+    width: 70px;
+    background-color: #ddb3b3;
+    color:white;
+}
 
 
 

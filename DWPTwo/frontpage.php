@@ -9,7 +9,9 @@
     <div class="btns">
         <a href="./login.php"> <button class="login">Login</button></a>
         <a href="./newuser.php"> <button class="signup">Sign up</button></a>
+        <a class="rules" href="./rules.php">Rules</a>
     </div>
+    
 </body>
 <title></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,4 +68,14 @@
         margin-top: 11px;
         margin: 5px;
     }
+
+    .rules {
+    text-decoration: none;
+    color: white;
+    }
+
+    .rules:hover {
+    text-decoration: underline;
+    }
+
 </style>
