@@ -21,5 +21,12 @@ class DbCon
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result['IsAdmin'];
     }
+
+    public function updateAvatar($userId, $avatarPath) {
+        $stmt = $this->dbCon->prepare("UPDATE `Profile` SET `Avatar` = :avatarPath WHERE ProfileID = :userId");
+        $stmt->bindParam(':avatarPath', $avatarPath);
+        $stmt->bindParam(':userId', $userId);
+        $stmt->execute();
+    }
 }
 ?>

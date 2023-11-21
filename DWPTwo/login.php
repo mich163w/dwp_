@@ -38,6 +38,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 }?>
 
 <html>
+<title>Login</title>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html" />

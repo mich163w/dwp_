@@ -1,6 +1,7 @@
 <?php require("connection.php"); ?>
 
 <!DOCTYPE html>
+<title>Index</title>
 <html lang="en">
 
 <?php require("includes/header.php"); ?>

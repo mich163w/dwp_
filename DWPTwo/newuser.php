@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 }
 ?>
 <html>
+<title>Sign up</title>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html" />
@@ -41,7 +42,9 @@ if (!empty($msg)) {
     
    <h4>Password:</h4> 
     <input type="password" name="Pass" maxlength="30" />
+    <a href="./login.php"><p>Already a user? Login</p></a>
     <input type="submit" name="submit" value="Sign up" />
+  
 </form>
 </body>
 
@@ -60,6 +63,10 @@ if (!empty($msg)) {
         padding: 0;
         background-image: url(./img/DWPBaggrund.jpg);
         background-size: cover;
+    }
+
+    p {
+        font-size: 11;
     }
 
     h2 {
