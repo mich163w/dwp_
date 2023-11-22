@@ -106,7 +106,7 @@ border-radius: 10px;
 }
 
 .file-avatar {
-    position: fixed;
+    position: absolute;
     margin-top: 109px;
     margin-left: -2%;
 }

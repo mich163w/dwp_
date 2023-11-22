@@ -6,6 +6,7 @@ echo $_FILES['picture']['name'];
 
 
 require ("connection.php");
+session_start();
 
 $stmt1 = $conn->prepare("INSERT INTO Media (URL, mediaTitle, mediaDesc, mediaProfileFK) VALUES (?, ?, ?, ?)");
 $stmt1->bind_param("sssi", $URL, $mediaTitle, $mediaDesc, $mediaProfileFK);
@@ -13,7 +14,7 @@ $stmt1->bind_param("sssi", $URL, $mediaTitle, $mediaDesc, $mediaProfileFK);
     $URL = htmlspecialchars(trim($URL));
     $mediaTitle = htmlspecialchars(trim($_POST['mediaTitle']));
     $mediaDesc = htmlspecialchars(trim($_POST['mediaDesc']));
-    $mediaProfileFK = 1;
+    $mediaProfileFK = $_SESSION['userid'];
 
     $stmt1->execute();
 

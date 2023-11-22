@@ -27,6 +27,7 @@
                             <input class="mTitle" type="text" name="mediaTitle">
                             <label for="Description">Description</label>
                             <input class="mDesc" type="text" name="mediaDesc" rows="10" col="25">
+                            <input type="hidden" name="userAvatar" value="<?php echo $row['Avatar']; ?>">
                             <input type="submit" class="submitBtn" name="submit" value="Submit" />
                         </div>
                     </div>
